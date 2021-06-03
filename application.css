@@ -1,0 +1,552 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS - Mr.Coffee website */
+
+:root {
+    --grey: #6a7b8b;
+    --dark-grey: #5c5b5b;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-size: 10px;
+    background-color: #f5f5f5;
+    color: var(--dark-grey);
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.main {
+    margin: 0 8em;
+}
+
+/* navigation*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: var(--grey);
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation__item {
+    font-size: 1.9em;
+    font-weight: bolder;
+    display: block;
+    margin: 0 28px;
+}
+
+.navigation__item--contact {
+    margin-right: 4em;
+}
+.navigation__link {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation__logo {
+    width: 200px;
+    height: 71px;
+    margin-left: 5.4em;
+    margin-top: 10px;
+}
+/*header*/
+
+.main-heading {
+    display: none;
+}
+
+.header__logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.heading-banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/mr_coffee_salle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.heading {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+    padding-top: 2em;
+}
+.priority {
+    width: 550px;
+    height: 550px;
+    background-color: #bac1c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.3;
+    padding: 2em;
+}
+
+.priority__heading {
+    text-shadow: 2px 2px 2px rgb(153, 153, 156);
+}
+
+.priority__icon {
+    max-width: 150px;
+    height: auto;
+}
+
+.priority__text {
+    text-align: center;
+    height: 150px;
+}
+.section-title {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.container-priorities {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 48px;
+}
+
+/*button*/
+.more {
+    display: block;
+    background-color: var(--grey);
+    margin: 100px auto;
+    width: 430px;
+    height: 100px;
+    border-radius: 16px;
+    border-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.opening__pic {
+    display: inline-block;
+    max-width: 150px;
+    height: auto;
+    margin-left: 9em;
+}
+
+.opening__info {
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    top: -30px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer {
+    font-size: 3.5em;
+    width: 42%;
+    text-align: center;
+    margin: 2.5em;
+}
+
+.offer__p1 {
+    padding: 0 1.5em;
+}
+.offer__p2 {
+    font-weight: bold;
+    padding: 1.5em 0;
+}
+.strong {
+    font-weight: bold;
+}
+
+.describe1 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 1.6em;
+    margin-bottom: 3em;
+}
+
+.describe2 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/*footer*/
+
+.footer {
+    background-color: var(--grey);
+    width: 100%;
+    height: 180px;
+}
+
+.footer__logo {
+    height: 94px;
+    width: 64px;
+    position: relative;
+    top: 45px;
+    left: 65px;
+    float: left;
+}
+
+.sm {
+    height: 35px;
+    width: 35px;
+    margin: 0 25px;
+}
+
+.sm-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+}
+
+.sm__title {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 2em;
+}
+
+/*About Desktop*/
+
+.about-container {
+    display: grid;
+    column-gap: 2em;
+    row-gap: 4em;
+    grid-template-areas:
+        "article1 picture1"
+        "picture2 article2";
+    font-size: 3em;
+    line-height: 1.3;
+    margin-bottom: 200px;
+}
+.mission1 {
+    grid-area: article1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mission2 {
+    grid-area: article2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mission1__pic {
+    grid-area: picture1;
+    width: 38vw;
+    height: auto;
+    padding-left: 4em;
+}
+
+.mission2__pic {
+    grid-area: picture2;
+    width: 40vw;
+    height: auto;
+}
+
+.mission__heading {
+    font-weight: normal;
+}
+
+/*Contact Desktop*/
+
+.main-contact {
+    margin: 0 23vw;
+}
+
+.contact__title {
+    font-weight: normal;
+}
+
+.contact__details--address {
+    margin-bottom: 2.5em;
+}
+
+.contact__details {
+    font-size: 3.5em;
+}
+.contact__map {
+    width: 54vw;
+    height: auto;
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+}
+.contact__title {
+    font-size: 5em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-container {
+        font-size: 2em;
+    }
+
+    .opening__pic {
+        display: block;
+        margin: 0 auto;
+    }
+    .opening__info {
+        display: block;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .priority {
+        padding: 5px;
+    }
+
+    .priority__text {
+        height: auto;
+    }
+    .offer {
+        margin: 0 auto;
+    }
+
+    .offer__p1 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .container-priorities {
+        display: block;
+    }
+    .priority {
+        margin: 1em auto;
+    }
+    .navigation {
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    .navigation__logo {
+        margin: 0 auto;
+    }
+
+    .navigation__item {
+        margin: 0 0.5em;
+    }
+
+    .navigation__list {
+        justify-content: center;
+    }
+
+    .offer {
+        margin: 0 auto;
+    }
+
+    /*About*/
+
+    .about-container {
+        grid-template-areas:
+            "article1"
+            "picture1"
+            "article2"
+            "picture2";
+    }
+
+    .mission1__pic,
+    .mission2__pic {
+        width: 50vw;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .mission__heading {
+        margin-bottom: 0.5em;
+    }
+    .mp {
+        margin: 0.5em 0;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 599px) {
+    .container-priorities {
+        display: block;
+    }
+
+    .priority {
+        font-weight: normal;
+        margin: 1em auto;
+    }
+    .opening__pic {
+        display: block;
+    }
+    .offers {
+        display: block;
+    }
+
+    .offer {
+        margin: 0;
+    }
+
+    /*About*/
+    .mission__heading {
+        font-size: 1.5em;
+    }
+}
