@@ -43,6 +43,78 @@
             />
         </header>
         <main class="main-contact">
+            <section>
+                <h2 class="contact__title">Dites nous tout !</h2>
+                <form class="form">
+                    <p class="form__paragraph">
+                        <label class="label" for="surname"
+                            >Nom *<br />
+                            <input
+                                class="input"
+                                required
+                                type="text"
+                                name="name"
+                                id="name"
+                            />
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label class="label" for="firstName"
+                            >Prénom *<br />
+                            <input
+                                class="input"
+                                required
+                                type="text"
+                                name="surname"
+                                id="surname"
+                            />
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label class="label" for="telephone"
+                            >Téléphone<br />
+                            <input
+                                class="input"
+                                type="tel"
+                                name="telephone"
+                                id="telephone"
+                            />
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label class="label" for="email"
+                            >Adresse mail *<br />
+                            <input
+                                class="input"
+                                required
+                                type="email"
+                                name="email"
+                                id="email"
+                            />
+                        </label>
+                    </p>
+                    <p class="form__paragraph">
+                        <label class="label" for="textarea"
+                            >Message *<br />
+                            <textarea
+                                class="input input--textarea"
+                                required
+                                id="textarea"
+                                placeholder="Tapez votre message ici"
+                                name="textarea"
+                            ></textarea>
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            class="button button--submit"
+                            type="submit"
+                            value="Envoyer"
+                        />
+                    </p>
+                </form>
+            </section>
             <section class="contact">
                 <h2 class="contact__title">On vous attend !</h2>
                 <div class="contact__details">
