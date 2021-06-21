@@ -265,8 +265,8 @@ h3 {
 .button {
     display: block;
     background-color: var(--grey);
-    margin: 100px auto;
-    width: 430px;
+    margin: 0.5em auto;
+    width: 400px;
     height: 100px;
     border-radius: 16px;
     border-color: transparent;
@@ -414,18 +414,74 @@ h3 {
 .main-contact {
     margin: 0 23vw;
     font-size: 3.5em;
+
 }
+
+
 .box {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out;
+    background-color:white;
     width:70vw;
     height:50vh;
-    background-color: grey;
-    border-style: 3px solid black;
-    z-index: 999;
+    padding:2em;
+    border: 1px solid black;
+    font-weight: bold;
+    z-index: 10;
+    
     
 }
 
-.button--submit {
+.box__active {
+    transform:translate(-50%, -50%) scale(1);
+}
+.overlay {
+    position:fixed;
+    opacity:0;
+    transition:200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:var(--light-grey);
+    pointer-events:none;
+}
+
+.overlay__active {
+    opacity:.5;
+    pointer-events:all;
+}
+
+.box__logo {
+    width:120px;
+    height:auto;
+    float:left;
+    margin:1em;
+}
+
+.merci {
+    display:block;
     text-transform: uppercase;
+    margin: 1em auto;
+    
+}
+
+.message {
+    text-align: center;
+}
+
+.small {
+    font-size:0.7em;
+    margin:2em;
+}
+
+.button__submit {
+    text-transform: uppercase;
+    margin-top:2em;
+    cursor: pointer;
 }
 
 .contact__title {
@@ -452,9 +508,11 @@ h3 {
     width: 100%;
 }
 
-.form__paragraph {
-    width: 100%;
+.form {
+    width:100%;
+    
 }
+
 
 .input {
     width: 100%;
