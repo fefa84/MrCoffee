@@ -461,7 +461,9 @@ h3 {
     float:left;
     margin:1em;
 }
-
+.form__paragraph {
+    position: relative;
+}
 .merci {
     display:block;
     text-transform: uppercase;
@@ -536,6 +538,16 @@ h3 {
     color: #fff;
 }
 
+.error-message {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.input--error {
+	border-color: #e74c3c;
+} 
 @media screen and (max-width: 1200px) {
     .about-container {
         font-size: 2em;
